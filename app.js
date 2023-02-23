@@ -20,8 +20,30 @@ const data2 = [
                     }
                 ]
             },
-            {title: 'motores'},
-            {title: 'variadores'},
+            {
+                title: 'motores',
+                categorias: [
+                    {
+                        title: 'tension',
+                        variantes: ["220v", "380v"]
+                    },
+                    {
+                        title: "HP",
+                        variantes: ["1HP", "2H", "3HP", "5HP", "7,5HP", "10HP", "15HP"]
+                    },
+                    {
+                        title: 'marca',
+                        variantes: ['cerwning', 'motorarg']
+                    }
+                ]
+            },
+            {
+                title: 'variadores',
+                categorias: [
+                    {
+                    }
+                ]
+            },
             {title: 'relevos'},
             {title: 'arranque suave'},
             {title: 'termicas'},
@@ -39,9 +61,6 @@ const data2 = [
             {title: 'colgantes'},
         ]
     },
-    {id:3},
-    {id:4},
-    {id:5},
 ]
 /*Los titulos de los products tienen que ser igualmente genericos*/
 console.log(data2);
